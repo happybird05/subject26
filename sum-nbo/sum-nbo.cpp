@@ -4,7 +4,13 @@
 #include <netinet/in.h>
 #include "sum-nbo.h"
 
-uint32_t sum_nbo(uint32_t n1, uint32_t n2, uint32_t n3)
+uint32_t sum_nbo(uint32_t* values, int count)
 {
-    return ntohl(n1) + ntohl(n2) + ntohl(n3); 
+    uint32_t total = 0;
+    int i;
+    for(i=0; i<count; i++)
+    {
+        total += ntohl(values[i]);
+    }
+    return total;
 }

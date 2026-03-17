@@ -13,4 +13,3 @@ sum-nbo.o: sum-nbo.h sum-nbo.cpp
 
 clean:
 	rm -f sum-nbo
-

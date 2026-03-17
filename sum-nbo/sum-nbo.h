@@ -1,5 +1,6 @@
 // sum-nbo.h
 
 #pragma once
+#include <stdint.h>
 
-uint32_t sum_nbo(uint32_t n1, uint32_t n2, uint32_t n3);
+uint32_t sum_nbo(uint32_t* values, int count);
